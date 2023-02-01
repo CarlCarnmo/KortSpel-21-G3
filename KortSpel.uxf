@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>940</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Dealer : Player
+--
+Deck</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2550</x>
+      <y>630</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Deck
+--
+-Lista av cards
++Reset()
++DrawCard</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>950</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Card
+--
++cardnumbermaybekindaprettymuch
++PrettyIconsidk</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>660</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+-name
+-recordOfPoints
+-hand Cards (lista cards)
++SumOfHand()
++CompareHandWithBank()
++GamblaPointForHand()
++AdjustPointToRecord()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>310</x>
+      <y>810</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>
+Utdelning
+Summera korten på hand
+Summera poäng efter omgång
+Summera poäng under hand
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>270</y>
+      <w>300</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Game
+--
++Player : Player
++Dealer : Dealer
++Deck : Deck
++Status : GameStatus
+--
++Game()
++Reset()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1380</x>
+      <y>660</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Deck
+--
+-Cards
+--
++Reset()
++DrawCard()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1370</x>
+      <y>520</y>
+      <w>150</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1160</x>
+      <y>520</y>
+      <w>90</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>70.0;10.0;70.0;440.0;10.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>820</y>
+      <w>100</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;80.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1480</x>
+      <y>840</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=52</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>520</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>m2=2-10</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
