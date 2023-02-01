@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>370</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Bank</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>120</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Deck
+--
+-Lista av cards
++Reset()
++DrawCard</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>240</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Cards
+--
+-color
+-value</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>140</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+-name
+-recordOfPoints
+-hand Cards (lista cards)
++SumOfHand()
++CompareHandWithBank()
++GamblaPointForHand()
++AdjustPointToRecord()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>70</x>
+      <y>480</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>
+Utdelning
+Summera korten på hand
+Summera poäng efter omgång
+Summera poäng under hand
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>30</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Rules
+--
+2-10 Player</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
